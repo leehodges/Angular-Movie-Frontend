@@ -30,6 +30,8 @@ import { TimeAgoPipe } from './shared/pipes/time-ago.pipe';
 import { MovieReviewsComponent } from './movies/movie-reviews/movie-reviews.component';
 import { SingleReviewCardComponent } from './movies/single-review-card/single-review-card.component';
 import { AddEditReviewsComponent } from './reviews/add-edit-reviews/add-edit-reviews.component';
+import { NewMovieComponent } from './movies/new-movie/new-movie.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { AddEditReviewsComponent } from './reviews/add-edit-reviews/add-edit-rev
     TimeAgoPipe,
     MovieReviewsComponent,
     SingleReviewCardComponent,
-    AddEditReviewsComponent
+    AddEditReviewsComponent,
+    NewMovieComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { AddEditReviewsComponent } from './reviews/add-edit-reviews/add-edit-rev
     FontAwesomeModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ImageCropperModule
   ],
   providers: [
     MovieService,

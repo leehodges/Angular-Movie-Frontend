@@ -60,7 +60,6 @@ export class UserService {
     .pipe(
       catchError(this.handleError),
       map(res => {
-        debugger;
         if (res && res.token) {
           const newUser = new User (res);
           this.storage.setItem('accessToken', res.token);

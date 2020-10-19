@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {AddEditReviewsComponent} from './reviews/add-edit-reviews/add-edit-reviews.component';
+import {NewMovieComponent} from './movies/new-movie/new-movie.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'movies/new',
+    component: NewMovieComponent,
     pathMatch: 'full'
   },
   {
